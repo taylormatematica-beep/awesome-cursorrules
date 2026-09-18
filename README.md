@@ -258,6 +258,8 @@ By adding selected `.mdc` files to `.cursor/rules/`, you can use these rules dir
 - [Project Epic Template](https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/project-epic-template-cursorrules-prompt-file.mdc) - Project development with epic template integration.
 - [Python Containerization](https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/python-containerization-cursorrules-prompt-file.mdc) - Python development with containerization integration.
 - [Python (GitHub Setup)](https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/python-github-setup-cursorrules-prompt-file.mdc) - Python development with GitHub setup integration.
+- [RepoGuard](https://github.com/taylormatematica-beep/repoguard) - Zero-dependency CLI that auto-generates strict .cursorrules, CLAUDE.md & Windsurf rules from your stack, with an 8-rule architecture health auditor.
+- [ROS / ROS2](https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/ros-ros2.mdc) - ROS and ROS2 packages, nodes, launch files, messages, services, actions, simulation, and testing.
 - [ROS / ROS2](https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/ros-ros2.mdc) - ROS and ROS2 packages, nodes, launch files, messages, services, actions, simulation, and testing.
 - [Tauri (Svelte, TypeScript Guide)](https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/tauri-svelte-typescript-guide-cursorrules-prompt-f.mdc) - Tauri development with Svelte and TypeScript guide integration.
 - [TypeScript Code Convention](https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/typescript-code-convention-cursorrules-prompt-file.mdc) - TypeScript development with code convention integration.
