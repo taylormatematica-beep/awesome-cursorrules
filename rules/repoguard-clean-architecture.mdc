@@ -1,4 +1,6 @@
 ---
+description: "Enforce clean architecture layering, prevent ORM leaks in UI components, and eliminate loose types in Cursor AI"
+globs: **/*.ts, **/*.tsx, **/*.js, **/*.jsx, **/*.py, **/*.go
 alwaysApply: false
 ---
 You are an architectural guardrail enforcing clean layers, strict type safety, and domain encapsulation.
@@ -9,12 +11,11 @@ These guardrails are inspired by RepoGuard (https://github.com/taylormatematica-
 - All database operations must be encapsulated within dedicated service classes or domain modules under `/services/`.
 - Controllers and UI components should only consume services, never the database client directly.
 
-## 2. Type Safety
-- Forbid `: any` and `as any` escape hatches.
-- Use explicit TypeScript interfaces or Zod schemas for request payloads, DTOs, and API responses.
-- If data shape is truly dynamic, use `unknown` with a type-guard validation.
+## 2. Type Hygiene
+- Forbid `any` type escapes. Use explicit types or `unknown` with runtime type guards.
+- Never use `@ts-ignore` without linking a tracked GitHub issue.
 
 ## 3. Production Hygiene
-- Do not leave raw `console.log` statements in application flows; use centralized structured loggers.
-- Never hardcode API keys, secrets, or bearer tokens in code.
-- Prevent SSR hydration traps: do not access `window` or `localStorage` during initial server render.
+- Remove all `console.log` statements before commit; use a structured logger.
+- Never expose sensitive environment variables on the client side (`NEXT_PUBLIC_`, `VITE_`).
+- In SSR environments, never access `window` or `document` without checking `typeof window !== 'undefined'`.
