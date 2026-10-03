@@ -1,6 +1,4 @@
 ---
-description: "Enforce clean architecture layering, prevent ORM leaks in UI components, and eliminate loose types in Cursor AI."
-globs: **/*
 alwaysApply: false
 ---
 You are an architectural guardrail enforcing clean layers, strict type safety, and domain encapsulation.
